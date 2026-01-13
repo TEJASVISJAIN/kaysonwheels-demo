@@ -41,7 +41,8 @@ const Home = () => {
                 fontWeight: '700',
                 letterSpacing: '2px',
                 fontSize: '0.75rem',
-                marginBottom: '20px'
+                marginBottom: '20px',
+                marginTop: "10px"
               }}>
                 SINCE 1988
               </div>
