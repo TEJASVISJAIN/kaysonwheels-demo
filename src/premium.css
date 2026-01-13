@@ -4,9 +4,9 @@
 
 :root {
   /* Premium Color Palette */
-  --primary-red: #C41E3A;
-  --primary-red-dark: #8B0000;
-  --accent-gold: #C41E3A;
+  --primary-red: #4A90E2;
+  --primary-red-dark: #2E5C8A;
+  --accent-gold: #4A90E2;
   --accent-silver: #C0C0C0;
   
   /* Sophisticated Neutrals */
@@ -162,7 +162,7 @@ h4 { font-size: 1.5rem; }
 }
 
 .btn-gold-accent {
-  background: linear-gradient(135deg, var(--accent-gold) 0%, #8B0000 100%);
+  background: linear-gradient(135deg, #4A90E2 0%, #2E5C8A 100%);
   color: white;
   padding: 16px 40px;
   border: none;

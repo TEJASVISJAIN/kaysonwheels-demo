@@ -54,22 +54,6 @@ const Header = () => {
       )}
 
       <header className="premium-header">
-        {/* Premium Top Bar */}
-        <div className="premium-top-bar">
-          <div className="container">
-            <div className="top-bar-content">
-              <div className="top-bar-text">
-                <i className="fa-solid fa-industry"></i>
-                <span className="hide-mobile">Manufacturer & Exporters of Motor Cycle Chain Kit</span>
-              </div>
-              <a href="mailto:kaysoncycles@gmail.com" className="top-bar-email">
-                <i className="fa-solid fa-envelope"></i>
-                <span className="hide-mobile-small">kaysoncycles@gmail.com</span>
-              </a>
-            </div>
-          </div>
-        </div>
-
         {/* Main Header */}
         <div className="container">
           <div className="main-header">
