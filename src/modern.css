@@ -2,12 +2,12 @@
 
 /* Modern Box Shadows */
 .modern-shadow {
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 8px rgba(74, 144, 226, 0.1);
   transition: box-shadow 0.3s ease;
 }
 
 .modern-shadow:hover {
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 8px 24px rgba(74, 144, 226, 0.15);
 }
 
 /* Modern Card Styles */
@@ -15,14 +15,14 @@
   background: white;
   border-radius: 12px;
   padding: 2rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 8px rgba(74, 144, 226, 0.1);
   transition: all 0.3s ease;
-  border: 1px solid rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(74, 144, 226, 0.1);
 }
 
 .modern-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 12px 32px rgba(74, 144, 226, 0.15);
 }
 
 /* Modern Button Styles */
@@ -39,7 +39,7 @@
 
 .btn-modern:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 12px rgba(74, 144, 226, 0.2);
 }
 
 /* Modern Section Spacing */
@@ -67,7 +67,7 @@
 
 .modern-text {
   line-height: 1.8;
-  color: #555;
+  color: #333;
   font-size: 16px;
 }
 
@@ -94,9 +94,9 @@
   background: white;
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 12px rgba(74, 144, 226, 0.1);
   transition: all 0.4s ease;
-  border: 1px solid rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(74, 144, 226, 0.1);
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -104,7 +104,7 @@
 
 .product-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 16px 40px rgba(74, 144, 226, 0.2);
 }
 
 .product-card-image {
@@ -144,7 +144,7 @@
 }
 
 .product-card-description {
-  color: #666;
+  color: #555;
   font-size: 0.95rem;
   line-height: 1.6;
   margin-bottom: 1rem;
@@ -157,11 +157,11 @@
   align-items: center;
   margin-top: auto;
   padding-top: 1rem;
-  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  border-top: 1px solid rgba(74, 144, 226, 0.15);
 }
 
 .product-card-link {
-  color: #d32f2f;
+  color: #4A90E2;
   font-weight: 600;
   text-decoration: none;
   font-size: 0.9rem;
@@ -172,7 +172,7 @@
 }
 
 .product-card-link:hover {
-  color: #b71c1c;
+  color: #2E5C8A;
   gap: 0.75rem;
 }
 
@@ -219,22 +219,22 @@
   border-radius: 16px;
   padding: 2.5rem 2rem;
   text-align: center;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 16px rgba(74, 144, 226, 0.1);
   transition: all 0.4s ease;
   height: 100%;
-  border: 1px solid rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(74, 144, 226, 0.1);
 }
 
 .feature-box-modern:hover {
   transform: translateY(-8px);
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 12px 32px rgba(74, 144, 226, 0.2);
 }
 
 .feature-box-modern .feature-icon {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #4A90E2 0%, #2E5C8A 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -251,7 +251,7 @@
 }
 
 .feature-box-modern p {
-  color: #666;
+  color: #555;
   line-height: 1.7;
   margin-bottom: 0;
 }
@@ -283,13 +283,13 @@
 }
 
 .breadcrumb-modern a {
-  color: #d32f2f;
+  color: #4A90E2;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .breadcrumb-modern a:hover {
-  color: #b71c1c;
+  color: #2E5C8A;
 }
 
 /* Page Header Modern */
@@ -334,7 +334,7 @@
   width: 100%;
   height: auto;
   border-radius: 12px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 16px rgba(74, 144, 226, 0.15);
 }
 
 /* Modern Form Styles */
@@ -345,7 +345,7 @@
 .modern-form-control {
   width: 100%;
   padding: 12px 16px;
-  border: 2px solid #e0e0e0;
+  border: 2px solid #E3F2FD;
   border-radius: 8px;
   font-size: 1rem;
   transition: all 0.3s ease;
@@ -354,8 +354,8 @@
 
 .modern-form-control:focus {
   outline: none;
-  border-color: #d32f2f;
-  box-shadow: 0 0 0 3px rgba(211, 47, 47, 0.1);
+  border-color: #4A90E2;
+  box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1);
 }
 
 .modern-label {
@@ -513,7 +513,7 @@
 }
 
 .btn-primary-modern {
-  background: linear-gradient(135deg, #d32f2f 0%, #b71c1c 100%);
+  background: linear-gradient(135deg, #4A90E2 0%, #2E5C8A 100%);
   color: white;
   padding: 14px 36px;
   border-radius: 8px;
@@ -528,15 +528,15 @@
 
 .btn-primary-modern:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(211, 47, 47, 0.3);
+  box-shadow: 0 8px 20px rgba(74, 144, 226, 0.3);
 }
 
 .btn-outline-modern {
   background: transparent;
-  color: #d32f2f;
+  color: #4A90E2;
   padding: 14px 36px;
   border-radius: 8px;
-  border: 2px solid #d32f2f;
+  border: 2px solid #4A90E2;
   font-weight: 600;
   font-size: 1rem;
   cursor: pointer;
@@ -546,7 +546,7 @@
 }
 
 .btn-outline-modern:hover {
-  background: #d32f2f;
+  background: #4A90E2;
   color: white;
 }
 

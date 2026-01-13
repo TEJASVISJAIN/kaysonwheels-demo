@@ -7,22 +7,22 @@
   --primary-red: #4A90E2;
   --primary-red-dark: #2E5C8A;
   --accent-gold: #4A90E2;
-  --accent-silver: #C0C0C0;
+  --accent-silver: #E3F2FD;
   
   /* Sophisticated Neutrals */
   --charcoal: #1a1a1a;
-  --slate-dark: #2d2d2d;
-  --slate: #404040;
-  --slate-light: #6b6b6b;
-  --silver-gray: #a8a8a8;
-  --light-gray: #e8e8e8;
-  --off-white: #f8f8f8;
+  --slate-dark: #2E5C8A;
+  --slate: #64A5E8;
+  --slate-light: #333;
+  --silver-gray: #B3D9F7;
+  --light-gray: #E3F2FD;
+  --off-white: #F8FCFF;
   
   /* Premium Shadows */
-  --shadow-subtle: 0 2px 8px rgba(0, 0, 0, 0.08);
-  --shadow-medium: 0 4px 16px rgba(0, 0, 0, 0.12);
-  --shadow-strong: 0 8px 32px rgba(0, 0, 0, 0.16);
-  --shadow-premium: 0 12px 48px rgba(0, 0, 0, 0.2);
+  --shadow-subtle: 0 2px 8px rgba(74, 144, 226, 0.1);
+  --shadow-medium: 0 4px 16px rgba(74, 144, 226, 0.15);
+  --shadow-strong: 0 8px 32px rgba(74, 144, 226, 0.2);
+  --shadow-premium: 0 12px 48px rgba(74, 144, 226, 0.25);
   
   /* Typography Scale */
   --font-display: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -50,7 +50,7 @@
 body {
   font-family: var(--font-body);
   line-height: 1.7;
-  color: var(--charcoal);
+  color: #333;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
@@ -61,7 +61,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: -0.5px;
-  color: var(--charcoal);
+  color: #1a1a1a;
 }
 
 h1 { font-size: 3.5rem; }
@@ -197,7 +197,7 @@ h4 { font-size: 1.5rem; }
   box-shadow: var(--shadow-medium);
   transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   overflow: hidden;
-  border: 1px solid rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(74, 144, 226, 0.1);
   position: relative;
 }
 
@@ -299,7 +299,7 @@ h4 { font-size: 1.5rem; }
   height: 100%;
   display: flex;
   flex-direction: column;
-  border: 1px solid rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(74, 144, 226, 0.1);
   position: relative;
 }
 
@@ -342,7 +342,7 @@ h4 { font-size: 1.5rem; }
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.5) 100%);
+  background: linear-gradient(180deg, transparent 0%, rgba(46, 92, 138, 0.3) 100%);
   opacity: 0;
   transition: opacity 0.5s;
   z-index: 1;
@@ -397,7 +397,7 @@ h4 { font-size: 1.5rem; }
 }
 
 .product-card-premium-description {
-  color: var(--slate-light);
+  color: #333;
   margin-bottom: 30px;
   flex-grow: 1;
   line-height: 1.8;
@@ -445,7 +445,7 @@ h4 { font-size: 1.5rem; }
 .premium-section-subtitle {
   text-align: center;
   font-size: 1.05rem;
-  color: var(--slate-light);
+  color: #555;
   max-width: 700px;
   margin: 0 auto 40px;
   line-height: 1.6;
@@ -533,7 +533,7 @@ h4 { font-size: 1.5rem; }
 }
 
 .premium-feature-description {
-  color: var(--slate-light);
+  color: #555;
   line-height: 1.8;
   font-size: 1rem;
 }
@@ -690,9 +690,10 @@ h4 { font-size: 1.5rem; }
    ======================================== */
 
 .premium-stats-section {
-  background: var(--charcoal);
+  background: transparent;
   padding: 35px 0;
   border-top: 3px solid var(--accent-gold);
+  border-bottom: 3px solid var(--accent-gold);
 }
 
 .premium-stat-box {
@@ -709,7 +710,7 @@ h4 { font-size: 1.5rem; }
   transform: translateY(-50%);
   width: 1px;
   height: 60px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(74, 144, 226, 0.2);
 }
 
 .premium-stat-box:last-child::after {
@@ -727,7 +728,7 @@ h4 { font-size: 1.5rem; }
 
 .premium-stat-label {
   font-size: 1rem;
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--charcoal);
   font-weight: 500;
   letter-spacing: 0.5px;
 }
@@ -809,7 +810,7 @@ h4 { font-size: 1.5rem; }
 .premium-about-feature-content p {
   font-size: 1rem;
   line-height: 1.7;
-  color: var(--slate-light);
+  color: #555;
   margin: 0;
 }
 
@@ -1036,8 +1037,8 @@ h4 { font-size: 1.5rem; }
 }
 
 .premium-nav {
-  background: linear-gradient(135deg, var(--charcoal) 0%, var(--slate-dark) 100%);
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  background: transparent;
+  border-top: 1px solid rgba(74, 144, 226, 0.2);
 }
 
 .nav-links {
@@ -1048,7 +1049,7 @@ h4 { font-size: 1.5rem; }
 }
 
 .nav-link {
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--charcoal);
   text-decoration: none;
   padding: 18px 24px;
   display: flex;
@@ -1065,7 +1066,7 @@ h4 { font-size: 1.5rem; }
 .nav-link:hover {
   color: var(--accent-gold);
   border-bottom-color: var(--accent-gold);
-  background: rgba(212, 175, 55, 0.1);
+  background: rgba(74, 144, 226, 0.05);
 }
 
 /* ========================================
@@ -1286,7 +1287,7 @@ h4 { font-size: 1.5rem; }
   height: auto;
   max-height: 350px;
   object-fit: contain;
-  filter: drop-shadow(0 10px 30px rgba(0,0,0,0.3));
+  filter: drop-shadow(0 10px 30px rgba(74, 144, 226, 0.3));
 }
 
 @media (max-width: 768px) {
@@ -1334,7 +1335,7 @@ h4 { font-size: 1.5rem; }
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(74, 144, 226, 0.3);
   z-index: 1050;
   animation: fadeIn 0.3s ease;
   backdrop-filter: blur(5px);
@@ -1360,6 +1361,6 @@ h4 { font-size: 1.5rem; }
   }
 
   .premium-nav.menu-open {
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 10px 30px rgba(74, 144, 226, 0.3);
   }
 }

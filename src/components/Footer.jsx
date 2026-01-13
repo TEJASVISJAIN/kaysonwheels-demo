@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <footer style={{ background: '#1a1a1a', color: '#fff', marginTop: '4rem' }}>
+    <footer style={{ background: '#4A90E2', color: '#fff', marginTop: '4rem' }}>
       {/* Main Footer */}
       <div style={{ padding: '60px 0 30px' }}>
         <div className="container">
@@ -14,7 +14,7 @@ const Footer = () => {
                 fontSize: '1.35rem', 
                 fontWeight: '600', 
                 marginBottom: '1.5rem',
-                borderBottom: '2px solid #d32f2f',
+                borderBottom: '2px solid #fff',
                 paddingBottom: '0.75rem',
                 display: 'inline-block'
               }}>
@@ -28,7 +28,7 @@ const Footer = () => {
                   alignItems: 'flex-start'
                 }}>
                   <i className="fa-solid fa-map-marker-alt" style={{ 
-                    color: '#d32f2f', 
+                    color: '#fff', 
                     fontSize: '1.2rem',
                     marginTop: '0.2rem'
                   }}></i>
@@ -48,7 +48,7 @@ const Footer = () => {
                   alignItems: 'flex-start'
                 }}>
                   <i className="fa-solid fa-phone" style={{ 
-                    color: '#d32f2f', 
+                    color: '#fff', 
                     fontSize: '1.2rem',
                     marginTop: '0.2rem'
                   }}></i>
@@ -78,7 +78,7 @@ const Footer = () => {
                   alignItems: 'flex-start'
                 }}>
                   <i className="fa-solid fa-envelope" style={{ 
-                    color: '#d32f2f', 
+                    color: '#fff', 
                     fontSize: '1.2rem',
                     marginTop: '0.2rem'
                   }}></i>
@@ -105,18 +105,18 @@ const Footer = () => {
                       justifyContent: 'center',
                       width: '40px',
                       height: '40px',
-                      background: '#d32f2f',
+                      background: '#fff',
                       borderRadius: '50%',
-                      color: 'white',
+                      color: '#4A90E2',
                       fontSize: '1.2rem',
                       transition: 'all 0.3s ease'
                     }}
                     onMouseEnter={(e) => {
-                      e.currentTarget.style.background = '#b71c1c';
+                      e.currentTarget.style.background = '#E3F2FD';
                       e.currentTarget.style.transform = 'translateY(-3px)';
                     }}
                     onMouseLeave={(e) => {
-                      e.currentTarget.style.background = '#d32f2f';
+                      e.currentTarget.style.background = '#fff';
                       e.currentTarget.style.transform = 'translateY(0)';
                     }}
                   >
@@ -133,7 +133,7 @@ const Footer = () => {
                 fontSize: '1.35rem', 
                 fontWeight: '600', 
                 marginBottom: '1.5rem',
-                borderBottom: '2px solid #d32f2f',
+                borderBottom: '2px solid #fff',
                 paddingBottom: '0.75rem',
                 display: 'inline-block'
               }}>
@@ -165,7 +165,7 @@ const Footer = () => {
                         transition: 'all 0.3s ease'
                       }}
                       onMouseEnter={(e) => {
-                        e.currentTarget.style.color = '#d32f2f';
+                        e.currentTarget.style.color = '#fff';
                         e.currentTarget.style.paddingLeft = '0.5rem';
                       }}
                       onMouseLeave={(e) => {
@@ -173,7 +173,7 @@ const Footer = () => {
                         e.currentTarget.style.paddingLeft = '0';
                       }}
                     >
-                      <i className="fa-solid fa-angle-right" style={{ color: '#d32f2f' }}></i>
+                      <i className="fa-solid fa-angle-right" style={{ color: '#fff' }}></i>
                       {link.label}
                     </Link>
                   </li>
@@ -188,7 +188,7 @@ const Footer = () => {
                 fontSize: '1.35rem', 
                 fontWeight: '600', 
                 marginBottom: '1.5rem',
-                borderBottom: '2px solid #d32f2f',
+                borderBottom: '2px solid #fff',
                 paddingBottom: '0.75rem',
                 display: 'inline-block'
               }}>
@@ -202,7 +202,7 @@ const Footer = () => {
                   style={{ 
                     border: 0,
                     borderRadius: '8px',
-                    boxShadow: '0 4px 12px rgba(0, 0, 0, 0.3)'
+                    boxShadow: '0 4px 12px rgba(0, 0, 0, 0.2)'
                   }} 
                   allowFullScreen="" 
                   loading="lazy"
@@ -216,7 +216,7 @@ const Footer = () => {
 
       {/* Footer Bottom */}
       <div style={{ 
-        background: '#0d0d0d', 
+        background: '#2E5C8A', 
         padding: '1.5rem 0',
         borderTop: '1px solid rgba(255, 255, 255, 0.1)'
       }}>
@@ -225,11 +225,11 @@ const Footer = () => {
             <div className="col-md-12" style={{ textAlign: 'center' }}>
               <p style={{ 
                 margin: 0, 
-                color: '#888',
+                color: '#E3F2FD',
                 fontSize: '0.95rem'
               }}>
                 <Link to="/" style={{ 
-                  color: '#d32f2f', 
+                  color: '#fff', 
                   textDecoration: 'none',
                   fontWeight: '600'
                 }}>

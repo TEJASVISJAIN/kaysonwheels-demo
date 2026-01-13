@@ -20,12 +20,12 @@ const About = () => {
               <h2 style={{ fontSize: '2.5rem', fontWeight: '700', marginBottom: '30px', lineHeight: '1.2' }}>
                 Leading Manufacturer of Motorcycle Components
               </h2>
-              <p style={{ fontSize: '1.05rem', lineHeight: '1.9', color: 'var(--slate-light)', marginBottom: '25px' }}>
+              <p style={{ fontSize: '1.05rem', lineHeight: '1.9', color: '#333', marginBottom: '25px' }}>
                 Kayson Wheels was established in 1988 as a bicycle component manufacturing company, 
                 producing bicycle freewheels. In coming years, the company diversified into multi-speed 
                 freewheels and subsequently bicycle chains.
               </p>
-              <p style={{ fontSize: '1.05rem', lineHeight: '1.9', color: 'var(--slate-light)', marginBottom: '25px' }}>
+              <p style={{ fontSize: '1.05rem', lineHeight: '1.9', color: '#333', marginBottom: '25px' }}>
                 Since the company's inception, its constant focus on quality has helped it develop into 
                 one of the leading manufacturers of bicycle parts in India. Along with this, the company 
                 also produces freewheels and chains in its own brand by the name of 'KAYCEE' and 'DOLPHIN'. 
