@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import emailjs from '@emailjs/browser';
 
 const Enquiry = () => {
   const [formData, setFormData] = useState({
@@ -9,6 +10,8 @@ const Enquiry = () => {
     message: ''
   });
 
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -16,10 +19,51 @@ const Enquiry = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    alert('Thank you for your enquiry! We will get back to you soon.');
+    
+    // Validation
+    if (!formData.name || !formData.email || !formData.message) {
+      alert('Please fill in all required fields (Name, Email, and Message)');
+      return;
+    }
+
+    setIsSubmitting(true);
+
+    try {
+      // EmailJS configuration
+      const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID || 'service_ox40k5g';
+      const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID || 'template_yc04e2o';
+      const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY || 'XRE8C4ecURVxrkrkH';
+
+      // Template parameters that will be sent in the email
+      const templateParams = {
+        from_name: formData.name,
+        from_email: formData.email,
+        phone: formData.phone || 'Not provided',
+        subject: formData.subject || 'General Enquiry',
+        message: formData.message
+      };
+
+      // Send email via EmailJS
+      await emailjs.send(serviceId, templateId, templateParams, publicKey);
+      
+      alert('Thank you for your enquiry! We\'ll get back to you within 24 hours.');
+      
+      // Reset form
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        subject: '',
+        message: ''
+      });
+    } catch (error) {
+      console.error('Error sending email:', error);
+      alert('Sorry, there was an error sending your message. Please try again or contact us directly at kaysoncycles@gmail.com');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -206,8 +250,21 @@ const Enquiry = () => {
                     </div>
 
                     <div className="col-md-12" style={{ textAlign: 'center' }}>
-                      <button type="submit" className="btn-premium-primary" style={{ padding: '18px 60px', fontSize: '1.1rem' }}>
-                        <i className="fa-solid fa-paper-plane"></i> Send Enquiry
+                      <button 
+                        type="submit" 
+                        className="btn-premium-primary" 
+                        style={{ padding: '18px 60px', fontSize: '1.1rem' }}
+                        disabled={isSubmitting}
+                      >
+                        {isSubmitting ? (
+                          <>
+                            <i className="fa-solid fa-spinner fa-spin"></i> Sending...
+                          </>
+                        ) : (
+                          <>
+                            <i className="fa-solid fa-paper-plane"></i> Send Enquiry
+                          </>
+                        )}
                       </button>
                     </div>
                   </div>
