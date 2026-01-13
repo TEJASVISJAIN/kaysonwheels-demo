@@ -1,0 +1,16 @@
+import Header from './Header';
+import Footer from './Footer';
+
+const Layout = ({ children }) => {
+  return (
+    <div className="body">
+      <Header />
+      <div role="main" className="main">
+        {children}
+      </div>
+      <Footer />
+    </div>
+  );
+};
+
+export default Layout;

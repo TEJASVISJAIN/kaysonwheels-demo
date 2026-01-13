@@ -1,0 +1,53 @@
+/* Base Styles - Light Theme */
+:root {
+  font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #333;
+  background-color: #ffffff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Force scrolling to work */
+html, body {
+  height: auto !important;
+  min-height: 100vh;
+  overflow-x: hidden !important;
+  overflow-y: visible !important;
+  position: relative;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background: #ffffff;
+  color: #333;
+  font-size: 16px;
+}
+
+#root {
+  width: 100%;
+  height: auto !important;
+  overflow: visible !important;
+}
+
+.body {
+  width: 100%;
+  height: auto !important;
+  overflow: visible !important;
+}
+

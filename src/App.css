@@ -1,0 +1,218 @@
+/* Modern Application Styles */
+
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Reset and Base Styles */
+* {
+  box-sizing: border-box;
+}
+
+.body {
+  width: 100%;
+}
+
+.main {
+  background: #fff;
+  width: 100%;
+}
+
+/* Container Improvements */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Row Improvements */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6,
+.col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+  padding: 0 15px;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .col-md-3 { width: 25%; }
+  .col-md-4 { width: 33.333%; }
+  .col-md-6 { width: 50%; }
+  .col-md-8 { width: 66.666%; }
+  .col-md-10 { width: 83.333%; }
+  .col-md-12 { width: 100%; }
+  .col-md-offset-1 { margin-left: 8.333%; }
+  .col-md-offset-2 { margin-left: 16.666%; }
+}
+
+/* Typography Enhancements */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+  color: #1a1a1a;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.75rem; }
+h4 { font-size: 1.5rem; }
+
+p {
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+/* Link Styles */
+a {
+  color: #d32f2f;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #b71c1c;
+}
+
+/* Button Enhancements */
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.btn-danger,
+.btn-primary {
+  background: linear-gradient(135deg, #d32f2f 0%, #b71c1c 100%);
+  color: white;
+  border: none;
+}
+
+.btn-danger:hover,
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(211, 47, 47, 0.3);
+  color: white;
+}
+
+.btn-secondary {
+  background: #6c757d;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background: #5a6268;
+  color: white;
+}
+
+.btn-rounded {
+  border-radius: 25px;
+}
+
+.btn-modern {
+  border-radius: 8px;
+  padding: 14px 32px;
+  font-size: 14px;
+}
+
+/* Image Styles */
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.img-rounded {
+  border-radius: 12px;
+}
+
+/* Text Utilities */
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+/* Margin & Padding Utilities */
+.mt-none { margin-top: 0; }
+.mt-xs { margin-top: 0.5rem; }
+.mt-sm { margin-top: 1rem; }
+.mt-lg { margin-top: 2rem; }
+.mt-xlg { margin-top: 3rem; }
+
+.mb-none { margin-bottom: 0; }
+.mb-xs { margin-bottom: 0.5rem; }
+.mb-sm { margin-bottom: 1rem; }
+.mb-lg { margin-bottom: 2rem; }
+.mb-xlg { margin-bottom: 3rem; }
+
+.pb-xs { padding-bottom: 0.5rem; }
+.pt-lg { padding-top: 2rem; }
+
+/* Display Utilities */
+.hidden-xs {
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .hidden-xs {
+    display: none;
+  }
+}
+
+/* Section Styles */
+.section {
+  padding: 60px 0;
+}
+
+.section-parallax {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Justify Content */
+.justify-content-center {
+  justify-content: center;
+}
+
+/* Font Weight */
+.font-weight-normal {
+  font-weight: 400;
+}
+
+.font-weight-semibold {
+  font-weight: 600;
+}
+
+.font-weight-bold {
+  font-weight: 700;
+}
+
+/* Center Class */
+.center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
