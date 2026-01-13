@@ -44,7 +44,7 @@ const QualityPolicy = () => {
                 <div style={{ 
                   width: '120px', 
                   height: '120px', 
-                  background: 'linear-gradient(135deg, var(--accent-gold), #B8941E)',
+                  background: 'linear-gradient(135deg, var(--primary-red), #8B0000)',
                   borderRadius: '50%',
                   display: 'flex',
                   alignItems: 'center',
