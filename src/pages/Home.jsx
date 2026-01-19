@@ -109,7 +109,7 @@ const Home = () => {
               { num: 'ISO', label: 'Certified Quality' }
             ].map((stat, index) => (
               <div className="col-md-3" key={index}>
-                <Reveal delay={index * 0.1} direction="up">
+                <Reveal delay={index * 0.1} direction="up" width="100%">
                   <div className="premium-stat-box">
                     <div className="premium-stat-number">{stat.num}</div>
                     <div className="premium-stat-label">{stat.label}</div>
@@ -177,7 +177,7 @@ const Home = () => {
       <section style={{ background: 'var(--off-white)', padding: '50px 0' }}>
         <div className="container">
           <div style={{ textAlign: 'center', marginBottom: '35px' }}>
-            <Reveal direction="down">
+            <Reveal direction="down" width="100%">
               <div className="premium-section-label" style={{ justifyContent: 'center' }}>OUR PRODUCTS</div>
               <h2 className="premium-section-title">Featured Products</h2>
               <p className="premium-section-subtitle">
@@ -239,7 +239,7 @@ const Home = () => {
       <section className="premium-section">
         <div className="container">
           <div style={{ textAlign: 'center', marginBottom: '35px' }}>
-            <Reveal direction="down">
+            <Reveal direction="down" width="100%">
               <div className="premium-section-label" style={{ justifyContent: 'center' }}>WHY CHOOSE US</div>
               <h2 className="premium-section-title">Manufacturing Excellence</h2>
               <p className="premium-section-subtitle">
@@ -277,7 +277,7 @@ const Home = () => {
       <section className="premium-cta-section">
         <div className="container">
           <div className="premium-cta-content">
-            <Reveal scale={0.9}>
+            <Reveal scale={0.9} width="100%">
               <h2 className="premium-cta-title">Ready to Experience Premium Quality?</h2>
               <p className="premium-cta-subtitle">
                 Get in touch with our team to discuss your requirements
