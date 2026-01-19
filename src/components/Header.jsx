@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import logo from '../assets/images/logo.png';
+import { motion } from 'framer-motion';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -33,7 +34,7 @@ const Header = () => {
       document.body.style.overflow = '';
       window.scrollTo(0, parseInt(scrollY || '0') * -1);
     }
-    
+
     // Cleanup on unmount
     return () => {
       document.body.style.position = '';
@@ -47,7 +48,7 @@ const Header = () => {
     <>
       {/* Overlay */}
       {isMenuOpen && (
-        <div 
+        <div
           className="menu-overlay"
           onClick={() => setIsMenuOpen(false)}
         />
@@ -58,13 +59,15 @@ const Header = () => {
         <div className="container">
           <div className="main-header">
             <Link to="/" className="logo-link">
-              <img 
-                src={logo} 
+              <motion.img
+                src={logo}
                 alt="Kayson Wheels"
                 className="logo"
+                whileHover={{ scale: 1.05 }}
+                transition={{ type: "spring", stiffness: 300, damping: 10 }}
               />
             </Link>
-            
+
             {/* Desktop Phone */}
             <div className="phone-box hide-tablet">
               <i className="fa-solid fa-phone"></i>
@@ -75,7 +78,7 @@ const Header = () => {
             </div>
 
             {/* Mobile Hamburger */}
-            <button 
+            <button
               className="hamburger"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               aria-label="Toggle menu"
@@ -90,14 +93,38 @@ const Header = () => {
           <div className="container">
             <div className="nav-links">
               {menuItems.map((item, index) => (
-                <Link 
+                <Link
                   key={index}
                   to={item.to}
                   className="nav-link"
                   onClick={() => setIsMenuOpen(false)}
+                  style={{ position: 'relative', overflow: 'hidden' }}
                 >
-                  <i className={`fa-solid ${item.icon}`}></i>
-                  <span>{item.label}</span>
+                  <motion.div
+                    whileHover="hover"
+                    initial="initial"
+                    style={{ display: 'flex', alignItems: 'center', gap: '8px' }}
+                  >
+                    <i className={`fa-solid ${item.icon}`}></i>
+                    <span>{item.label}</span>
+
+                    {/* Metallic / Chain Reveal Effect Underline */}
+                    <motion.div
+                      variants={{
+                        initial: { x: '-101%' },
+                        hover: { x: '0%' }
+                      }}
+                      transition={{ type: 'tween', ease: 'circOut', duration: 0.3 }}
+                      style={{
+                        position: 'absolute',
+                        bottom: '-2px',
+                        left: 0,
+                        width: '100%',
+                        height: '2px',
+                        background: 'linear-gradient(90deg, transparent, #D4AF37, transparent)',
+                      }}
+                    />
+                  </motion.div>
                 </Link>
               ))}
             </div>
